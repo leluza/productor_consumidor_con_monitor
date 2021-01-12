@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+<net id="Net-One" type="P/T net">
+<token id="Default" enabled="true" red="0" green="0" blue="0"/>
+<place id="P0 - Produzco">
+<graphics>
+<position x="330.0" y="120.0"/>
+</graphics>
+<name>
+<value>P0 - Produzco</value>
+<graphics>
+<offset x="108.0" y="21.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P1-Tomo Envases">
+<graphics>
+<position x="420.0" y="300.0"/>
+</graphics>
+<name>
+<value>P1-Tomo Envases</value>
+<graphics>
+<offset x="56.0" y="-14.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,10</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P2 - Entrego Llenos">
+<graphics>
+<position x="420.0" y="435.0"/>
+</graphics>
+<name>
+<value>P2 - Entrego Llenos</value>
+<graphics>
+<offset x="58.0" y="-18.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P3-Consumidores">
+<graphics>
+<position x="195.0" y="225.0"/>
+</graphics>
+<name>
+<value>P3-Consumidores</value>
+<graphics>
+<offset x="20.0" y="-16.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,5</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P4-Producores">
+<graphics>
+<position x="645.0" y="225.0"/>
+</graphics>
+<name>
+<value>P4-Producores</value>
+<graphics>
+<offset x="76.0" y="-24.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,8</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P5 - Consumo">
+<graphics>
+<position x="510.0" y="120.0"/>
+</graphics>
+<name>
+<value>P5 - Consumo</value>
+<graphics>
+<offset x="47.0" y="-13.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P6 - Produzco">
+<graphics>
+<position x="330.0" y="360.0"/>
+</graphics>
+<name>
+<value>P6 - Produzco</value>
+<graphics>
+<offset x="43.0" y="40.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P7-Tomo Envases">
+<graphics>
+<position x="405.0" y="45.0"/>
+</graphics>
+<name>
+<value>P7-Tomo Envases</value>
+<graphics>
+<offset x="53.0" y="-11.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,15</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P8  - Entrego Llenos">
+<graphics>
+<position x="420.0" y="210.0"/>
+</graphics>
+<name>
+<value>P8  - Entrego Llenos</value>
+<graphics>
+<offset x="59.0" y="-8.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<place id="P9 - Consumo">
+<graphics>
+<position x="510.0" y="375.0"/>
+</graphics>
+<name>
+<value>P9 - Consumo</value>
+<graphics>
+<offset x="44.0" y="-13.0"/>
+</graphics>
+</name>
+<initialMarking>
+<value>Default,0</value>
+<graphics>
+<offset x="0.0" y="0.0"/>
+</graphics>
+</initialMarking>
+<capacity>
+<value>0</value>
+</capacity>
+</place>
+<transition id="T0 - Tomo Envase">
+<graphics>
+<position x="330.0" y="45.0"/>
+</graphics>
+<name>
+<value>T0 - Tomo Envase</value>
+<graphics>
+<offset x="25.0" y="-15.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T1 - Devuelvo LLeno">
+<graphics>
+<position x="330.0" y="210.0"/>
+</graphics>
+<name>
+<value>T1 - Devuelvo LLeno</value>
+<graphics>
+<offset x="42.0" y="-20.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T2 - - Tomo LLeno">
+<graphics>
+<position x="510.0" y="210.0"/>
+</graphics>
+<name>
+<value>T2 - - Tomo LLeno</value>
+<graphics>
+<offset x="42.0" y="45.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T3 -  Devuelvo Vacio ">
+<graphics>
+<position x="510.0" y="45.0"/>
+</graphics>
+<name>
+<value>T3 -  Devuelvo Vacio </value>
+<graphics>
+<offset x="69.0" y="-14.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T4 - Tomo Envase">
+<graphics>
+<position x="330.0" y="300.0"/>
+</graphics>
+<name>
+<value>T4 - Tomo Envase</value>
+<graphics>
+<offset x="43.0" y="-12.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T5 - Devuelvo LLeno">
+<graphics>
+<position x="330.0" y="435.0"/>
+</graphics>
+<name>
+<value>T5 - Devuelvo LLeno</value>
+<graphics>
+<offset x="55.0" y="49.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T6 - Tomo LLeno">
+<graphics>
+<position x="510.0" y="435.0"/>
+</graphics>
+<name>
+<value>T6 - Tomo LLeno</value>
+<graphics>
+<offset x="43.0" y="44.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<transition id="T7 - Devuelvo Vacio ">
+<graphics>
+<position x="510.0" y="300.0"/>
+</graphics>
+<name>
+<value>T7 - Devuelvo Vacio </value>
+<graphics>
+<offset x="74.0" y="-8.0"/>
+</graphics>
+</name>
+<orientation>
+<value>0</value>
+</orientation>
+<rate>
+<value>1.0</value>
+</rate>
+<timed>
+<value>false</value>
+</timed>
+<infiniteServer>
+<value>false</value>
+</infiniteServer>
+<priority>
+<value>1</value>
+</priority>
+</transition>
+<arc id="P0 to T1" source="P0 - Produzco" target="T1 - Devuelvo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="342" y="146" curvePoint="false"/>
+<arcpath id="001" x="342" y="207" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P1 to T4" source="P1-Tomo Envases" target="T4 - Tomo Envase">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="417" y="312" curvePoint="false"/>
+<arcpath id="001" x="346" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P2 to T6" source="P2 - Entrego Llenos" target="T6 - Tomo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="446" y="447" curvePoint="false"/>
+<arcpath id="001" x="516" y="447" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P3 to T0" source="P3-Consumidores" target="T0 - Tomo Envase">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="215" y="224" curvePoint="false"/>
+<arcpath id="001" x="336" y="57" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P3 to T4" source="P3-Consumidores" target="T4 - Tomo Envase">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="219" y="244" curvePoint="false"/>
+<arcpath id="001" x="336" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P4 to T2" source="P4-Producores" target="T2 - - Tomo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="642" y="235" curvePoint="false"/>
+<arcpath id="001" x="526" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P4 to T6" source="P4-Producores" target="T6 - Tomo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="649" y="249" curvePoint="false"/>
+<arcpath id="001" x="526" y="447" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P5 to T3" source="P5 - Consumo" target="T3 -  Devuelvo Vacio ">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="117" curvePoint="false"/>
+<arcpath id="001" x="522" y="72" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P6 to T5" source="P6 - Produzco" target="T5 - Devuelvo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="342" y="386" curvePoint="false"/>
+<arcpath id="001" x="342" y="432" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P7 to T0" source="P7-Tomo Envases" target="T0 - Tomo Envase">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="402" y="57" curvePoint="false"/>
+<arcpath id="001" x="346" y="57" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P8 to T2" source="P8  - Entrego Llenos" target="T2 - - Tomo LLeno">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="446" y="222" curvePoint="false"/>
+<arcpath id="001" x="516" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="P9 to T7" source="P9 - Consumo" target="T7 - Devuelvo Vacio ">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="372" curvePoint="false"/>
+<arcpath id="001" x="522" y="327" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T0 to P0" source="T0 - Tomo Envase" target="P0 - Produzco">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="342" y="72" curvePoint="false"/>
+<arcpath id="001" x="342" y="117" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 to P3" source="T1 - Devuelvo LLeno" target="P3-Consumidores">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="336" y="222" curvePoint="false"/>
+<arcpath id="001" x="296" y="236" curvePoint="true"/>
+<arcpath id="002" x="221" y="236" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T1 to P8" source="T1 - Devuelvo LLeno" target="P8  - Entrego Llenos">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="222" curvePoint="false"/>
+<arcpath id="001" x="417" y="222" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T2 to P5" source="T2 - - Tomo LLeno" target="P5 - Consumo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="207" curvePoint="false"/>
+<arcpath id="001" x="522" y="146" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T3 to P4" source="T3 -  Devuelvo Vacio " target="P4-Producores">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="526" y="57" curvePoint="false"/>
+<arcpath id="001" x="648" y="224" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T3 to P7" source="T3 -  Devuelvo Vacio " target="P7-Tomo Envases">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="57" curvePoint="false"/>
+<arcpath id="001" x="473" y="48" curvePoint="true"/>
+<arcpath id="002" x="431" y="54" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T4 to P6" source="T4 - Tomo Envase" target="P6 - Produzco">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="342" y="327" curvePoint="false"/>
+<arcpath id="001" x="342" y="357" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to P2" source="T5 - Devuelvo LLeno" target="P2 - Entrego Llenos">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="346" y="447" curvePoint="false"/>
+<arcpath id="001" x="417" y="447" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T5 to P3" source="T5 - Devuelvo LLeno" target="P3-Consumidores">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="336" y="447" curvePoint="false"/>
+<arcpath id="001" x="214" y="249" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T6 to P9" source="T6 - Tomo LLeno" target="P9 - Consumo">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="522" y="432" curvePoint="false"/>
+<arcpath id="001" x="522" y="401" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to P1" source="T7 - Devuelvo Vacio " target="P1-Tomo Envases">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="516" y="312" curvePoint="false"/>
+<arcpath id="001" x="446" y="312" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+<arc id="T7 to P4" source="T7 - Devuelvo Vacio " target="P4-Producores">
+<graphics/>
+<inscription>
+<value>Default,1</value>
+<graphics/>
+</inscription>
+<tagged>
+<value>false</value>
+</tagged>
+<arcpath id="000" x="526" y="312" curvePoint="false"/>
+<arcpath id="001" x="593" y="281" curvePoint="true"/>
+<arcpath id="002" x="644" y="245" curvePoint="false"/>
+<type value="normal"/>
+</arc>
+</net>
+</pnml>
